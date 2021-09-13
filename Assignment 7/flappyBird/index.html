@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="gameScreen">
+
+        <section class="sky">
+            <div class="menu">
+                <p>Best</p>
+                <h1 class="bestScore">0</h1>
+                <button class="btn__menu" onClick="window.location.reload();">
+                    Restart
+                </button>
+            </div>
+
+            <div class="pause">
+                <img src="./Images/pause.png">
+            </div>
+            
+            <div class="resume">
+                <img src="./Images/play.png">
+            </div>
+
+            <h1 class="score__sky">0</h1>
+
+            <div class="bird"></div>
+
+        </section>
+
+        <section class="ground">
+
+        </section>
+
+        <section class="tapToStart">
+            <img src="./Images/tap.png" alt="">
+        </section>
+
+    
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

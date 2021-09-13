@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Kameron|Sansita&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #c4e7d4;
+  font-family: Sansita;
+}
+
+.gameScreen {
+  top: 80px;
+  width: 500px;
+  height: 675px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.sky {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  background-image: url(./Images/sky.png);
+}
+
+.menu {
+  top: 200px;
+  left: 105px;
+  z-index: +2;
+  width: 300px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu h1,
+p {
+  letter-spacing: 0.1em;
+  font-family: "Sansita";
+}
+
+.menu h1 {
+  font-size: 3em;
+  color: white;
+}
+
+.menu p {
+  font-size: 1.5em;
+  color: #e86224;
+}
+
+.btn__menu {
+  width: 40%;
+  height: 1.5em;
+  margin-left: 30%;
+
+  font-size: 1.5em;
+  font-family: "Sansita";
+
+  color: white;
+  background: #e86224;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.ground {
+  z-index: 1;
+  top: 600px;
+  height: 75px;
+  width: 500px;
+  position: absolute;
+  background-repeat: repeat-x;
+  background-position-x: 10em;
+  background-image: url(./Images/ground.png);
+}
+
+.bird {
+  width: 60px;
+  height: 50px;
+  left: 190px;
+  bottom: 265px;
+  position: absolute;
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-image: url(./Images/bird.png);
+}
+
+.obstacle {
+  width: 80px;
+  height: 250px;
+  position: absolute;
+  background-size: cover;
+  background-image: url(./Images/obstacle.png);
+}
+
+.topObstacle {
+  width: 80px;
+  height: 250px;
+  position: absolute;
+  transform: rotate(180deg);
+  background-size: cover;
+  background-image: url(./Images/obstacle.png);
+}
+
+.pause {
+  top: 5px;
+  left: 5px;
+  width: 32px;
+  height: 32px;
+  z-index: +2;
+  object-fit: cover;
+  position: absolute;
+}
+
+.resume {
+  top: 5px;
+  left: 5px;
+  width: 32px;
+  height: 32px;
+  z-index: +2;
+  display: none;
+  object-fit: cover;
+  position: absolute;
+}
+
+.score__sky {
+  top: 50px;
+  left: 48%;
+  z-index: 1;
+  display: none;
+  font-size: 4em;
+  color: white;
+  position: absolute;
+}
+
+.tapToStart {
+  top: 45%;
+  left: 45%;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  transform: rotate(-30deg);
+}
