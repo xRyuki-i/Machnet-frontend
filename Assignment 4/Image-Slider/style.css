@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+}
+
+/* Slide Components */
+.slider {
+  width: 1280px;
+  height: 720px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1280px;
+  height: 720px;
+}
+
+/* Buttons to change pictures */
+.button {
+  height: 10%;
+  background: none;
+  border: 1px;
+  border-radius: 5px;
+  color: white;
+}
+
+.button:hover {
+  background-color: #b8b8b8;
+}
+
+.button img {
+  height: 50px;
+}
+
+.btn--next {
+  margin-left: -65px;
+}
+
+.btn--prev {
+  margin-right: -65px;
+  z-index: 1;
+}
+
+/* Bottom navigation */
+.navigation {
+  position: absolute;
+  width: 1260px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.nav__btn:first-child {
+  background-color: white;
+}
+
+.nav__btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav__btn:hover {
+  background: white;
+}

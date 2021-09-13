@@ -1,0 +1,51 @@
+body {
+  display: flex;
+}
+
+.wrapper {
+  margin-left: 300px;
+  width: 300px;
+  min-height: 250px;
+  position: relative;
+  border: 2px solid orange;
+  border-right: 40px solid orange;
+  padding: 15px;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+}
+
+.wrapper nav {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -16.5rem;
+  margin-top: 1rem;
+  transform: rotate(-270deg);
+  transform-origin: 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  background-color: orange;
+  width: 100vh;
+  height: 2em;
+  transform: rotate(-270deg);
+  margin-top: 1.6em;
+  text-align: center;
+}
+
+nav {
+  padding-top: 0.5em;
+}
+
+.container nav a {
+  padding-right: 3em;
+}

@@ -1,0 +1,40 @@
+body {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+
+#track {
+    height: 720px;
+    width: 320px;
+    background-image: url('./Images/track.jpg');
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    column-gap: 2em;
+    background-repeat: repeat-y;
+    background-position: 0% 10em;
+}
+
+.player {
+    background-image: url('./Images/player.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.obstacle {
+    background-image: url('./Images/obstacle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gameMenu {
+  display: none;
+  margin-left: -268px;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+}

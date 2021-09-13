@@ -1,0 +1,31 @@
+body {
+  position: relative;
+  background-color: #eae2b7;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.board {
+  height: 560px;
+  width: 560px;
+  border: 0.6em solid #0f7173;
+  border-radius: 0.5em;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(8, 70px);
+  grid-template-rows: repeat(8, 70px);
+}
+
+.board__dark {
+  background-color: #020202;
+}
+
+.board__light {
+  background-color: #ebebd3;
+}
