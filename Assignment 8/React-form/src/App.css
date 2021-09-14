@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Kameron|Sansita&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  background: #2d2327;
+  font-family: "Sansita", serif;
+}
+
+.header {
+  padding: 1.5em;
+  background: #2d2327;
+  border-bottom: 0.2em solid #eff6ee;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 0.3em;
+  max-width: 25em;
+  margin-top: 5em;
+  color: #eff6ee;
+  border-radius: 0.3em;
+}
+
+.topic__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  background-color: red;
+}
