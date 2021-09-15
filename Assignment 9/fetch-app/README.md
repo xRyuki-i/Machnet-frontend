@@ -1,5 +1,14 @@
 # Getting Started with Create React App
 
+1. #Homepage
+   ![Home page](./Screenshots/homepage.png)
+
+2. #Search for ac
+   ![Search1](./Screenshots/searchforac.png)
+
+3. #Search for cocktail
+   ![Search2](./Screenshots/searchforcocktail.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
