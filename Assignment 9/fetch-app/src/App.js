@@ -37,7 +37,7 @@ function App() {
           e.preventDefault();
           const filteredData = data.filter(drink => {
             return (searchValue.toLowerCase() === drink[0].toLowerCase() ||
-            searchValue.toLowerCase() == drink[1].toLowerCase());
+            searchValue.toLowerCase() === drink[1].toLowerCase());
           })
           setFilteredData(filteredData);
           setIsDataFiltered(true);
