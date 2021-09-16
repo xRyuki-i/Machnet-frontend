@@ -1,0 +1,12 @@
+.count__block {
+  color: #2d2c2c;
+  font-size: 2em;
+  padding-bottom: 0.3em;
+}
+
+.label__block {
+  font-size: 0.8em;
+  background-color: #eaeaea;
+  height: 1em;
+  padding: 0.5em;
+}
