@@ -16,11 +16,11 @@
 
 4. ### Validation for no input
 
-![Validation1] (./Screenshots/validation1.png)
+![Validation1](./Screenshots/validation1.png)
 
 5. ### Validation for invalid user
 
-![Validation2] (./Screenshots/validation2.png)
+![Validation2](./Screenshots/validation2.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
