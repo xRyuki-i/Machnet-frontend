@@ -4,15 +4,15 @@
 
 1. ### Landing Page
 
-![Landing Page]{./landingPage.png}
+![Landing Page]{./Screenshots/landingPage.png}
 
 2. ### Unhireable User Profile
 
-![Unhireable User]{./unhireable.png}
+![Unhireable User]{./Screenshots/unhireable.png}
 
 3. ### Hireable User Profile
 
-![Hireable User]{./hireable.png}
+![Hireable User]{./Screenshots/hireable.png}
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
