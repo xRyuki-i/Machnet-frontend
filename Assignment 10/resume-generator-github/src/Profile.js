@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router';
 import { Block } from './components/block/Block';
 import { Card } from './components/card/Card';
+import { convertDate } from './convertDate';
+
 
 
 const Profile = () => {
@@ -12,12 +14,14 @@ const Profile = () => {
     const history = useHistory();
     const userName = history.location.state;
     const [resume, setResume] = useState({});
+    const [date, setDate] = useState('');
     const api = "https://api.github.com/users/"+userName;
 
     const fetchResume = () => {
         axios.get(api)
         .then(res => {
             setResume(res.data);
+            setDate(res.data.created_at);
         })
         .catch(err =>{
             console.log(err);
@@ -28,6 +32,7 @@ const Profile = () => {
         fetchResume();
     },[])
 
+    let convertedDate = convertDate(date.substr(0,10));
 
     return (
         <div className="content">
@@ -81,51 +86,35 @@ const Profile = () => {
 
                 <section className="details__wrapper">
                     <div className="info__details">
-                        {/* <div className="card__info">
-                            <p className="label__card">Email</p>
+                        <Card 
+                            labelName="Email" 
+                            cardValue={resume.email ? resume.email : "-"} 
+                            iconUrl="./gmail.png"/>
 
-                            <h3 className="value__card">{resume.email}</h3>
-                        </div> */}
+                        <Card 
+                            labelName="Organization" 
+                            cardValue={resume.company ? resume.company: "-"} 
+                            iconUrl="./company.png"/>
 
-                        <Card labelName="Email" cardValue={resume.email} />
-                        <Card labelName="Organization" cardValue={resume.company} />
-                        <Card labelName="Location" cardValue={resume.location} />
+                        <Card 
+                            labelName="Location" 
+                            cardValue={resume.location ? resume.location : "-"}
+                            iconUrl="./location.png" />
 
+                        <Card 
+                            labelName="Joined Date" 
+                            cardValue={convertedDate}
+                            iconUrl="./joined.png" />
 
-                        {/* <div className="card__info">
-                            <p className="label__card">Organization</p>
+                        <Card 
+                            labelName="Twitter" 
+                            cardValue={(resume.twitter_username == null) ? "-" : '@'+resume.twitter_username}
+                            iconUrl="./twitter.png" />
 
-                            <h3 className="value__card">{resume.company}</h3>
-                        </div>
-
-                        <div className="card__info">
-                            <p className="label__card">Location</p>
-
-                            <h3 className="value__card">{resume.location}</h3>
-                        </div> */}
-
-                        <Card labelName="Joined Date" cardValue={resume.created_at} />
-                        <Card labelName="Twitter" cardValue={'@'+resume.twitter_username} />
-                        <Card labelName="Website" cardValue={resume.html_url} />
-
-                        {/* <div className="card__info">
-                            <p className="label__card">Joined Date</p>
-
-                            <h3 className="value__card">{resume.created_at}</h3>
-                        </div>
-
-                        <div className="card__info">
-                            <p className="label__card">Twitter</p>
-
-                            <h3 className="value__card">{'@'+resume.twitter_username}</h3>
-                        </div>
-
-                        <div className="card__info">
-                            <p className="label__card">Website</p>
-
-                            <h3 className="value__card">{resume.html_url}</h3>
-                        </div> */}
-
+                        <Card  
+                            labelName="Website" 
+                            cardValue={resume.html_url} 
+                            iconUrl="./website.png"/>
                     </div>
 
                     <div className="bio__wrapper">

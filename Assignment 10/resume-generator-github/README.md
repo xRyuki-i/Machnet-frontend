@@ -1,5 +1,19 @@
 # Getting Started with Create React App
 
+### Screenshots
+
+1. ### Landing Page
+
+![Landing Page]{./landingPage.png}
+
+2. ### Unhireable User Profile
+
+![Unhireable User]{./unhireable.png}
+
+3. ### Hireable User Profile
+
+![Hireable User]{./hireable.png}
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
