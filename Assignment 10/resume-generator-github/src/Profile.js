@@ -1,11 +1,11 @@
 import React from 'react';
 import './profile.css';
 import axios from 'axios';
-import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router';
-import { Block } from './components/block/Block';
-import { Card } from './components/card/Card';
 import { convertDate } from './convertDate';
+import { useState, useEffect } from 'react';
+import { Card } from './components/card/Card';
+import { Block } from './components/block/Block';
 
 
 
@@ -13,8 +13,10 @@ const Profile = () => {
     
     const history = useHistory();
     const userName = history.location.state;
+
     const [resume, setResume] = useState({});
     const [date, setDate] = useState('');
+
     const api = "https://api.github.com/users/"+userName;
 
     const fetchResume = () => {
@@ -24,7 +26,7 @@ const Profile = () => {
             setDate(res.data.created_at);
         })
         .catch(err =>{
-            console.log(err);
+            alert('an error has occured');
         })
     }
 

@@ -56,7 +56,7 @@ body {
 }
 
 .profile__wrapper {
-  width: 25%;
+  width: fit-content;
   margin-top: -6em;
 }
 

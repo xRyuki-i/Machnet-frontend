@@ -1,6 +1,6 @@
 export const convertDate = (date) => {
-    let allDate = date.split(' ');
-    let thisDate = allDate[0].split('-');
+
+    let thisDate = date.split('-');
 
     let month = parseInt(thisDate[1])
     let mmm = ['Jan', 'Feb', 'Mar', 'Apr',

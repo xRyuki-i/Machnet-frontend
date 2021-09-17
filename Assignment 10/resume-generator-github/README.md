@@ -14,6 +14,11 @@
 
 ![Hireable User](./Screenshots/hireable.png)
 
+4. ### Validation
+
+![Validation1] (./Screenshots/validation1.png)
+![Validation2] (./Screenshots/validation2.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
